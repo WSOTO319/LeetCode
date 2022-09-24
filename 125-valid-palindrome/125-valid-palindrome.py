@@ -1,10 +1,5 @@
-class Solution(object):
-    def isPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
-        
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
         l, r = 0, len(s)-1  #set the left pointer to 0(starts at the first letter) and the right pointer to the length of string(starts at last letter)
         while l < r: # while left pointer is not equal to or greater than the right pointer
             while l < r and not s[l].isalnum(): # while left pointer is less than right and the left points at a non-alphanumeric
